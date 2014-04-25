@@ -34,7 +34,7 @@ $title = "Simplefin - Sistema simples de gerenciamento financeiro";
 
   ?>
 </head>
-<body>
+<body onLoad="setTimeout(function() {window.scrollTo(0, 1)}, 100);">
 <div>
   <div class="header">
 
