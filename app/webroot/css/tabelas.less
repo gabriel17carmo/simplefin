@@ -1,0 +1,65 @@
+
+  .tab-fin { 
+    .border-box;
+    width: 100%;
+    text-align: center; 
+    .tab-cab {
+      background-color: @color-primary;
+      .tab-cab-cell {
+        padding: 0 4px;
+        background-color: @color-primary;
+        color: @color-contrast;
+        font-weight: normal;
+        height: 30px;
+        width: 6.9%;
+        &.tab-tipo {
+          width: 10.3%;
+        }
+
+      }
+      .th-header {
+        position: relative;
+        z-index: 20000;
+      }
+    }
+    .tab-rec-linha {
+      .tab-rec-cell {
+        font-family: @font-cash;
+        margin:0;
+        padding: 0;
+        font-size: 14px;
+        background-color: #f0f0f0;
+        height: 50px;
+        &.tab-rec-total {
+          background-color: #e8e8e8;
+          font-weight: 600;
+        }
+        &.tab-font-preta {
+          color: @color-font;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .tab-receitas {
+    .tab-rec-cell {
+      color: #1d8600;
+    }
+  }
+  .tab-despesas {
+    .tab-rec-cell {
+      color: #af0000;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: @color-link-default;
+    &:hover, &:focus{
+      /*text-decoration: underline;*/
+      color: #27ae60;
+    }
+    &:visited {
+      color: @color-link-visited;
+    }
+  }
