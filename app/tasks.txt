@@ -1,0 +1,6 @@
+- Tablesorter em receitas e despesas.
+- Modal em cada receita ou despesa.
+- Cor de fundo diferentes com mouseover em receitas ou despesas.
+- Tirar o require da descrição em Adds.
+- Colocor require nos selects.
+- Salvar a ordenação do home.

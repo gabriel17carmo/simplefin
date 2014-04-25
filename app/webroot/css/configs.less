@@ -1,0 +1,62 @@
+.config-editself {
+
+  .form-editself {
+    width: 100%;
+    margin-right: 2.5%;
+    margin: 20px 0 0 0;
+    
+    input {
+      color: @color-font;
+      font-family: @font-primary;
+      font-size: 16px;
+      border: 1px solid rgba(0,0,0,0.2);
+      padding: 10px;
+      width: 95%;
+      outline: none;
+      box-shadow: none;
+      .transition-all(0.2s);
+      &:focus {
+        box-shadow: 0 0 3px @color-quaternary;
+      }
+    }
+    input[type="submit"] {
+      margin: 15px 0;
+      background-color: #27ae60;
+      color: @color-contrast;
+      cursor: pointer;
+      box-shadow: none;
+      .transition-all(0.2s);
+      &:hover {
+        background-color: #2ecc71;
+        box-shadow: 0 0 3px #27ae60;
+      }
+    }
+    select {
+      border: 1px solid rgba(0,0,0,0.2);
+      color: @color-font;
+      font-family: @font-primary;
+      box-shadow: none;
+      padding: 8px;
+      margin: 0;
+      width: 95%;
+      font-size: 16px;
+      outline: none;
+      .transition-all(0.2s);
+      &:focus {
+        box-shadow: 0 0 3px @color-quaternary;
+      }
+    }
+  }
+}
+.bloco-form {
+  margin: 15px 0 0 0;
+}
+h2 {
+  margin: 10px 0 !important;
+}
+
+.config-page{
+  .alert {
+    width: 95%!important;
+  }
+}

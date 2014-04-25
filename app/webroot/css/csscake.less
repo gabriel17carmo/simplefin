@@ -1,0 +1,72 @@
+#flashMessage {
+  // color: @color-alert;
+  // font-size: 18px;
+  // margin: 0 0 25px 0;
+  display: inline;
+}
+
+.control-group {
+  margin: 5px 0;
+
+}
+
+.centraliza {
+  margin: 0 auto;
+}
+
+.alert {
+  padding: 10px 15px;
+  margin: 7px 0;
+  background-color: #d9edf7;
+  border: 1px solid;
+  border-color: #bce8f1;
+  height: 100%;
+  width: auto;
+  vertical-align: middle;
+}
+
+.fecha {
+  float: right;
+  // display: relative;
+  // right: 0;
+}
+
+.modo-edicao {
+  margin: 0 1.2% 10px 0;
+  float: right;
+  display: inline-block;
+  cursor: pointer;
+
+  .switch-edit {
+    display: table-cell;
+    background-image: linear-gradient(to right, @color-primary 50%, @color-contrast 50%);
+    height: 30px;
+    vertical-align: middle;
+    width: 80px;
+    text-align: center;
+    color: @color-primary;
+    font-weight: bold;
+    
+
+    .transition-all(0.2s);
+    .on {
+      margin: 0 7px 0 0;
+    }
+    .off {
+      margin: 0 0 0 7px;
+    }
+  }
+  .borda {
+    border: 1px solid rgba(0,0,0,.3);
+    display: inline-block;
+  }
+  &>span{
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 10px 0 0;
+  }
+}
+
+.clear {
+  clear: both;
+}

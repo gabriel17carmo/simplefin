@@ -1,0 +1,153 @@
+/* TIPO */
+#show-form-banco {
+  display: inline-block;
+  padding: 7px;
+  margin: 0 10px 0 0;
+  background-color: @color-contrast;
+  color: @color-font;
+  .transition-all(0.2s);
+  &:hover {
+    color: @color-contrast;
+    background-color: @color-secundary;
+  };
+  &.is-active {
+    color: @color-contrast;
+    background-color: @color-secundary;
+  };
+}
+
+.add-banco {
+  display: none;
+  .form-banco {
+    width: 100%;
+    margin-right: 2.5%;
+    margin: 20px 0 0 0;
+    
+    input {
+      color: @color-font;
+      font-family: @font-primary;
+      font-size: 16px;
+      border: 1px solid rgba(0,0,0,0.2);
+      padding: 10px;
+      width: 95%;
+      outline: none;
+      box-shadow: none;
+      .transition-all(0.2s);
+      &:focus {
+        box-shadow: 0 0 3px @color-quaternary;
+      }
+    }
+    input[type="submit"] {
+      margin: 15px 0;
+      background-color: #1abc9c;
+      color: @color-contrast;
+      cursor: pointer;
+      box-shadow: none;
+      .transition-all(0.2s);
+      &:hover {
+        background-color: #16a085;
+        box-shadow: 0 0 3px #1abc9c;
+      }
+    }
+  }
+}
+
+.form-conta {
+
+  float: left;
+  width: 100%;
+  margin-right: 2.5%;
+  display: block;
+
+  label {
+    font-size: 18px;
+  }
+
+  .bloco-conta {
+    margin: 10px 0 0 0;
+
+  }
+
+  input[type="submit"] {
+    margin: 15px 0;
+    background-color: @color-quaternary;
+    color: @color-contrast;
+    cursor: pointer;
+    box-shadow: none;
+    .transition-all(0.2s);
+    &:hover {
+      background-color: @color-tertiary;
+      box-shadow: 0 0 3px @color-secundary;
+    }
+  }
+
+  input {
+    color: @color-font;
+    font-family: @font-primary;
+    font-size: 15px;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 10px;
+    width: 95%;
+    outline: none;
+    box-shadow: none;
+    margin: 0;
+    .transition-all(0.2s);
+    &:focus {
+      box-shadow: 0 0 3px @color-quaternary;
+    }
+  }
+  select {
+    border: 1px solid rgba(0,0,0,0.2);
+    color: @color-font;
+    font-family: @font-primary;
+    box-shadow: none;
+    padding: 8px;
+    margin: 0;
+    width: 95%;
+    font-size: 16px;
+    outline: none;
+    .transition-all(0.2s);
+    &:focus {
+      box-shadow: 0 0 3px @color-quaternary;
+    }
+  }
+
+  .number-cifra {
+    font-family: @font-cash;
+    display: inline-table;
+    border-collapse: separate;
+    position: relative;
+    width: 95%;
+    input {
+      padding: 10px;
+      display: table-cell;
+      width: 100%;
+      border-top: 1px solid rgba(0,0,0,0.2);
+      border-bottom: 1px solid rgba(0,0,0,0.2);
+      border-right: none;
+      border-left: none;
+    }
+    span.addon-number {
+      padding: 10px;
+      color: #656758;
+      font-weight: normal;
+      line-height: 1;
+      text-align: center;
+      background-color: #eeeeee;
+      border: 1px solid #cccccc;
+      display: table-cell;
+    }
+  }
+
+  .bloco-form {
+    margin: 15px 0 0 0;
+
+    &.conta-inline {
+      width: 48.67%;
+      display: inline-block;
+      select {
+        width: 94%;
+      }
+    }
+  }
+}
